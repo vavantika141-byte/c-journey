@@ -36,13 +36,11 @@ int main() {
 
     Solution obj;
 
-    // Push and enqueue all characters
     for (char c : s) {
         obj.pushCharacter(c);
         obj.enqueueCharacter(c);
     }
 
-    // Compare characters from stack and queue
     bool isPalindrome = true;
     for (int i = 0; i < s.length() / 2; i++) {
         if (obj.popCharacter() != obj.dequeueCharacter()) {
