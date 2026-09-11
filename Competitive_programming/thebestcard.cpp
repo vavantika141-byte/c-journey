@@ -1,3 +1,4 @@
+#include<iostream>
 using namespace std;
 bool prime(int x)
 {
