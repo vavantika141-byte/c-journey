@@ -10,7 +10,7 @@ int main(){
     while(t--){
     int n, m,d;
     cin>>n>>m>>d;
-    int max_boxes= (d)/(m+1);
+    int max_boxes= d/m+1;
     int towers = (n+ max_boxes-1)/max_boxes;
     cout<<towers<<'\n';
     }
